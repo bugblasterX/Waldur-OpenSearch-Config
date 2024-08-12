@@ -30,5 +30,5 @@ API_KEY=your_api_key_here
 OPENSEARCH_ADMIN_PASSWORD=your_opensearch_password_here
 
 # API URL for external service integration
-API_URL=https://api.yourservice.com
+API_URL=https://yourwaldurlink.ee/api/events/
 ```
