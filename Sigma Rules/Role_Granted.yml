@@ -1,0 +1,16 @@
+id: 5wVs6ZABNm6gEpTPeWmp
+logsource:
+  product: waldur_platform
+title: Waldur Role Granted
+description: Detects role granted events.
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - role_granted

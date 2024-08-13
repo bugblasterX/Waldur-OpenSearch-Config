@@ -1,0 +1,16 @@
+id: uAW46ZABNm6gEpTPp3H2
+logsource:
+  product: waldur_platform
+title: Waldur User Deletion Succeeded
+description: Detects successful user deletions
+tags: []
+falsepositives: []
+level: high
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - user_deletion_succeeded

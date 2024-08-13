@@ -1,0 +1,16 @@
+id: GrjpppAB80N40iH91n9Y
+logsource:
+  product: waldur_platform
+title: Waldur Multiple IP Detected for User
+description: Multiple IPs detected for a user within short time frame.
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    multiple_ip_detected|all:
+      - 'True'

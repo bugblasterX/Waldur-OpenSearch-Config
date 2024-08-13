@@ -1,0 +1,18 @@
+id: s7jOppAB80N40iH9nHzA
+logsource:
+  product: waldur_platform
+title: Waldur New IP
+description: Waldur New IP
+tags: []
+falsepositives: []
+level: high
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    new_ip|all:
+      - 'True'
+    event_type|all:
+      - auth_logged_in_with_username

@@ -1,0 +1,18 @@
+id: qrjNppAB80N40iH9RHzJ
+logsource:
+  product: waldur_platform
+title: Waldur_Token_Lifetime_None
+description: Detects if a user’s API token was updated to be permanent.
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - token_lifetime_updated
+    context.affected_user_token_lifetime|all:
+      - None

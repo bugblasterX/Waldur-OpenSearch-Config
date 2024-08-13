@@ -1,0 +1,16 @@
+id: vgV46ZABNm6gEpTPuWvV
+logsource:
+  product: waldur_platform
+title: Waldur Mass Resource Deletion
+description: Detects mass resource deletion events in a short timeframe.
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - resource_deletion_exceeded

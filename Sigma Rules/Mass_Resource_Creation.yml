@@ -1,0 +1,16 @@
+id: qKl36ZAB-pgv8Z1Ys3uU
+logsource:
+  product: waldur_platform
+title: Waldur Mass Resource Creation
+description: Detects mass resource creation events in a short timeframe.
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - resource_creation_exceeded

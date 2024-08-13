@@ -1,0 +1,16 @@
+id: BwVu6ZABNm6gEpTPF2o9
+logsource:
+  product: waldur_platform
+title: Waldur Role Updated
+description: Detects role updated events.
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - role_updated

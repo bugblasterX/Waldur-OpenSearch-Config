@@ -1,0 +1,16 @@
+id: 8gVt6ZABNm6gEpTPTWnH
+logsource:
+  product: waldur_platform
+title: Waldur Role Revoked
+description: Detects role revoked events.
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - role_revoked

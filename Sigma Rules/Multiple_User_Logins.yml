@@ -1,0 +1,18 @@
+id: wrk5r5AB80N40iH9pgsD
+logsource:
+  product: waldur_platform
+title: Waldur Multiple Logins For User
+description: >-
+  Detects when multiple successful login attempts detected within a short time
+  span for a specific user.
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - multiple_logins_detected

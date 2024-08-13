@@ -1,0 +1,18 @@
+id: pLjLppAB80N40iH9lXwv
+logsource:
+  product: waldur_platform
+title: Waldur Admin User Deactivated
+description: Waldur Admin User Deactivated
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - user_deactivated
+    context.affected_user_is_staff|all:
+      - 'True'

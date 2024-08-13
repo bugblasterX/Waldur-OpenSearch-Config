@@ -1,0 +1,18 @@
+id: wo9F8JABFD_6xajDRbuF
+logsource:
+  product: waldur_platform
+title: Waldur Admin User Activated
+description: Detects Waldur admin  user account activations
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - user_activated
+    context.affected_user_is_staff|all:
+      - 'True'

@@ -1,0 +1,16 @@
+id: vKl66ZAB-pgv8Z1YAnvc
+logsource:
+  product: waldur_platform
+title: Waldur Mass Resource Update
+description: Detects mass resource update events in a short timeframe.
+tags: []
+falsepositives: []
+level: medium
+status: experimental
+references: []
+author: ''
+detection:
+  condition: Selection_1
+  Selection_1:
+    event_type|all:
+      - resource_update_exceeded
