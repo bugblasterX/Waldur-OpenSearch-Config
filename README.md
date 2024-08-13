@@ -11,6 +11,7 @@ This repository contains the configuration files used in the thesis, to set up a
 - **logstash.yml**: Pipeline settings for Logstash.
 - **python_event_script.py**: Python script used to collect data from a Waldur API endpoint and forward it to Logstash.
 - **sample_data.json**: Sample data that can be adjusted and ingested into OpenSearch via Logstash.
+- - **Sigma Rules**: Sample Sigma rules that can be imported into OpenSearch.
 
 ### Prerequisites
 
