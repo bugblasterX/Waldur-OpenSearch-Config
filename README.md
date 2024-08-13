@@ -29,6 +29,6 @@ API_KEY=your_api_key_here
 # OpenSearch admin password
 OPENSEARCH_ADMIN_PASSWORD=your_opensearch_password_here
 
-# API URL for external service integration
+# API URL for Waldur events endpoint integration
 API_URL=https://yourwaldurlink.ee/api/events/
 ```
